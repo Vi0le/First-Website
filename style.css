@@ -1,80 +1,103 @@
+html {
+    height: 100%;
+}
+
 body{
     color: #E9E8F1ff;
     margin: 0;
     font-family: 'Orbitron', sans-serif;
     background-image:  
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ), url("/images/bg-img.jpg");
     background-size: cover;
-}
+    background-repeat: no-repeat;
+    background-image: center;
+    overflow: hidden;
+} 
 
-#container{
+/* top section here */
+.nav-bar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 500px;
-    color: #8392B7ff;
+    justify-content: end;
 }
 
+/* removing the  bullets*/
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+/* removing the  bullets*/
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* setting up effects for hover */
+.nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #44759c;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+/* adding hover */
+.nav-bar ul li:hover::after{
+    width: 100%;
+}
+
+/* resizing and positioning the logo */
+.logo{
+    cursor: pointer;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* content */
+#container{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: left;
+    margin-left: 50px;
+    color: #fff;
+}
+
+/* resizing text elem */
 #container h1 {
-    text-shadow: 5px 5px 10px black;
+    font-size: 50px;
+    margin-top: 10px;
 }
 
+#container p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* img resize */
 #profile-img{
     width: 300px;
     border-radius: 200px;
     border: 6px solid #BFC4D7ff;
-    margin: 100px;
 }
 
-#top-sec{
-    color: white;
-    background-color: #3E4D83ff;
-    bottom: 0px;
-    width: 100%;
-}
-
-#top-sec ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#top-sec li{
-    float: right;
-    font-weight: bold;
-    border-right: 1px solid #bbb;
-}
-
-#top-sec li a{
-    display: block;
-    color: white;
+#center-text{
     text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-}
-
-#top-sec li a:hover{
-    background-color: rgb(45, 63, 129);
-}
-
-#top-sec .logo{
-    margin: 5px 5px;
-}
-
-.button-sec{
-    color: #3E4D83ff;
-    border-radius: 5px;
-    padding: 6px 12px;
-    background: white;
-    border: none;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
-}
-
-.span-test{
-    text-decoration: underline;
+    margin-top: 50px;
 }
