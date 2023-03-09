@@ -1,0 +1,80 @@
+body{
+    color: #E9E8F1ff;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-image:  
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("/images/bg-img.jpg");
+    background-size: cover;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: #8392B7ff;
+}
+
+#container h1 {
+    text-shadow: 5px 5px 10px black;
+}
+
+#profile-img{
+    width: 300px;
+    border-radius: 200px;
+    border: 6px solid #BFC4D7ff;
+    margin: 100px;
+}
+
+#top-sec{
+    color: white;
+    background-color: #3E4D83ff;
+    bottom: 0px;
+    width: 100%;
+}
+
+#top-sec ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#top-sec li{
+    float: right;
+    font-weight: bold;
+    border-right: 1px solid #bbb;
+}
+
+#top-sec li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+#top-sec li a:hover{
+    background-color: rgb(45, 63, 129);
+}
+
+#top-sec .logo{
+    margin: 5px 5px;
+}
+
+.button-sec{
+    color: #3E4D83ff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background: white;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+.span-test{
+    text-decoration: underline;
+}
