@@ -5,7 +5,6 @@ html {
 body{
     color: #E9E8F1ff;
     margin: 0;
-    font-family: 'Orbitron', sans-serif;
     background-image:  
     linear-gradient(
       rgba(0, 0, 0, 0.6),
@@ -25,6 +24,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: end;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* removing the  bullets*/
@@ -69,24 +69,32 @@ body{
 
 /* content */
 #container{
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    text-align: left;
-    margin-left: 50px;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
     color: #fff;
+    text-align: center;
 }
 
 /* resizing text elem */
-#container h1 {
+.img-sec h1 {
     font-size: 50px;
-    margin-top: 10px;
+    font-weight: 400;
+    margin-top: 5px;
 }
 
-#container p {
+.profile-sec h2{
+    margin-top: -20px;
+    font-weight: 400;
+}
+
+.desc-sec h3 {
+    margin-top: 70px;
+    font-weight: 10;
+    font-style: italic;
+}
+
+.desc-sec p {
     margin: 20px auto;
-    font-weight: 100;
     line-height: 25px;
 }
 
@@ -97,7 +105,92 @@ body{
     border: 6px solid #BFC4D7ff;
 }
 
-#center-text{
+/* text desc*/
+.desc-sec .profile-sec{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
+}
+
+/* ===================profile section=================== */
+#profile-container{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    color: #fff;
+}
+
+/* image position*/
+.profile-sec{
+    position: absolute;
+    left: 4%;
+    width: 270px;
+    border: 1px solid #BFC4D7ff;
+}
+
+/* image resize */
+#profile-img2{
+    width: 250px;
+    padding: 10px;
+}
+
+/* details below img */
+#details h2{
+    background-color:rgb(103, 103, 112);
+    text-align: center;
+    margin: 0;
+}
+
+.details-content{
+    display: flex;
+    align-items: baseline;
+    margin-top: 0px;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+/* centering the UL tag */
+.list-container{
+    text-align: center;
+}
+
+/* moving the LI tag on left and removing the bullets and default margin and padding */
+.nameUL{
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    font-size: large;
+    font-weight: 100;
+    flex-basis: 50%;
+}
+
+/* debut */
+
+/* text content on details */
+#details h3{
+    font-weight: 1;
+    flex-basis: 50%;
+    margin: 0 5px;
+}
+
+#details p{
+    font-size: large;
+    font-weight: 100;
+    flex-basis: 50%;
+}
+
+.text-sec{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.text-sec h1{
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid white;
 }
