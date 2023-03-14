@@ -12,8 +12,8 @@ body{
     ), url("/images/bg-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: center;
-    overflow: hidden;
+    background-attachment: fixed;
+    overflow: auto;
 } 
 
 /* top section here */
@@ -62,7 +62,7 @@ body{
 /* resizing and positioning the logo */
 .logo{
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     bottom: 8px;
     right: 16px;
 }
@@ -180,6 +180,7 @@ body{
     flex-basis: 50%;
 }
 
+/*  */
 .text-sec{
     position: absolute;
     width: 50%;
@@ -190,7 +191,11 @@ body{
 }
 
 .text-sec h1{
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 500;
     border-bottom: 1px solid white;
+}
+
+.text-sec p{
+    font-size: 1.1rem;
 }
